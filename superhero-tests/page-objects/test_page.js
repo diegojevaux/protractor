@@ -17,6 +17,12 @@ TestPage.prototype = Object.create(
       get: function() {
         return element(by.id("login-title"));
       }
+    },
+
+    byCSS: {
+      get: function() {
+        return element(by.css("#form-login > div:nth-child(1) > label"));
+      }
     }
   }
 );
