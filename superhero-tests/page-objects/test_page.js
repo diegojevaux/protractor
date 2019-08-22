@@ -23,6 +23,28 @@ TestPage.prototype = Object.create(
       get: function() {
         return element(by.css("#form-login > div:nth-child(1) > label"));
       }
+    },
+
+    buttonTxt: {
+      get: function() {
+        return element(by.buttonText("Submit"));
+      }
+    },
+
+    partialBtnTxt: {
+      get: function() {
+        return element(by.partialButtonText("Sub"));
+      }
+    },
+    linkTxt: {
+      get: function() {
+        return element(by.id("Link"));
+      }
+    },
+    partialLinkTxt: {
+      get: function() {
+        return element(by.id("lin"));
+      }
     }
   }
 );
