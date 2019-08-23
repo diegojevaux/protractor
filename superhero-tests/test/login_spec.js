@@ -23,7 +23,7 @@ describe("Login Page Tests", function() {
     afterEach(function() {});
 
     it("should display all Login page elements", function() {
-     // expect(loginPage.loginTitleTxt.isDisplayed()).toBe(true);
+      expect(loginPage.loginTitleTxt.isDisplayed()).toBe(true);
 
       // loginPage.loginTitleTxt
       // loginPage.emailFldLbl
