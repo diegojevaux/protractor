@@ -6,7 +6,7 @@ exports.config = {
     browserName: "chrome"
   },
 
-  specs: ["./test/*.js"],
+  specs: ["./test/login_spec.js"],
 
   jasmineNodeOpts: {
     showColors: true

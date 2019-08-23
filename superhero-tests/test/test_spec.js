@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 var TestePage = require("../page-objects/test_page");
 
 describe("Super Hero Page", function() {
@@ -6,7 +7,7 @@ describe("Super Hero Page", function() {
   beforeEach(function() {
     testPage = new TestePage();
 
-    browser.ignoreSynchronization = true;
+    //browser.ignoreSynchronization = true;
 
     // Open URL
     browser.get("file:///C:/Udemy/protractor/protractor/superhero/index.html");

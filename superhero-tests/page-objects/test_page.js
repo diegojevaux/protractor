@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 var TestPage = function() {};
 
 TestPage.prototype = Object.create(
