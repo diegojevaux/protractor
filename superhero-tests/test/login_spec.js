@@ -22,24 +22,31 @@ describe("Login Page Tests", function() {
 
     afterEach(function() {});
 
-    it("should display all Login page elements", function() {
+    fit("should display all Login page elements", function() {
       expect(loginPage.loginTitleTxt.isDisplayed()).toBe(true);
+      
 
-      // loginPage.loginTitleTxt
-      // loginPage.emailFldLbl
-      // loginPage.emailFld
-      // loginPage.passwordFldLbl
-      // loginPage.passwordFld
-      // loginPage.rememberChkLbl
-      // loginPage.rememberChk
-      // loginPage.submitBtn
+      expect(loginPage.emailFldLbl.isDisplayed()).toBe(true);
+      expect(loginPage.emailFld.isDisplayed()).toBe(true);
+      expect(loginPage.emailFld.getText()).toEqual('')
+      
+      expect(loginPage.passwordFldLbl.isDisplayed()).toBe(true);
+      expect(loginPage.passwordFld.isDisplayed()).toBe(true);
+      expect(loginPage.passwordFld.getText()).toEqual('')
+      
+      expect(loginPage.rememberChkLbl.isDisplayed()).toBe(true);
+      expect(loginPage.rememberChk.isDisplayed()).toBe(true);
+      expect(loginPage.rememberChk.isSelected()).toBe(true);
+      
+      expect(loginPage.submitBtn.isDisplayed()).toBe(true);
+
     });
 
-    // it("should display error message when no email and password entered", function() {});
+    it("should display error message when no email and password entered", function() {});
 
-    // it("should display error message when no password entered", function() {});
+    it("should display error message when no password entered", function() {});
 
-    // it("should display error message when no username entered", function() {});
+    it("should display error message when no username entered", function() {});
 
-    // it("should login", function() {});
+    it("should login", function() {});
   });
